@@ -4,3 +4,14 @@
 *.tfstate.backup
 terraform.tfvars
 
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# macOS
+.DS_Store
+
+# Packages
+AWSCLIV2.pkg
