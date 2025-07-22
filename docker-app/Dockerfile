@@ -1,10 +1,12 @@
-FROM python:3.9-slim
+# Use official Nginx base image
+FROM nginx:latest
 
-WORKDIR /app
-COPY . /app
+# Copy custom HTML or app files to Nginx web root (optional)
+# COPY ./html /usr/share/nginx/html
 
-RUN pip install -r requirements.txt
-
+# Expose port 80
 EXPOSE 80
-CMD ["python", "app.py"]
+
+# Run Nginx in foreground
+CMD ["nginx", "-g", "daemon off;"]
 
