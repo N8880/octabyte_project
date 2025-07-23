@@ -156,4 +156,4 @@ GitHub: [@N8880](https://github.com/N8880)
 
 ## 📝 License
 
-This project is created for educational and assessment purposes only.
+This project is created for assessment purposes only.
